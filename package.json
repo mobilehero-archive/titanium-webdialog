@@ -1,14 +1,13 @@
 {
 	"name": "@titanium/webdialog",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Native modules that allows you to use native SFSafariViewController (iOS) and Chrome Pages (Android) with Axway Titanium native mobile apps.",
 	"main": "index.js",
 	"scripts": {
 		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-		"license": "Apache-2.0",
 		"postinstall": "tiapp-remove-module ti.webdialog && tiapp-add-module ti.webdialog ios 1.1.0 && tiapp-add-module ti.webdialog android 1.1.0",
 		"postuninstall": "tiapp-remove-module ti.webdialog",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "npm install --ignore-scripts && npm run list-files"
 	},
 	"author": {
 		"name": "Brenton House",
@@ -44,7 +43,8 @@
 		"ipad",
 		"webdialog",
 		"safari",
-		"brentonhouse"
+		"titanium-native-module",
+		"brenton-house"
 	],
 	"titanium": {
 		"type": "native-module",
