@@ -1,0 +1,71 @@
+{
+	"name": "@titanium/webdialog",
+	"version": "0.0.1",
+	"description": "Native modules that allows you to use native SFSafariViewController (iOS) and Chrome Pages (Android) with Axway Titanium native mobile apps.",
+	"main": "index.js",
+	"scripts": {
+		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+		"license": "Apache-2.0",
+		"postinstall": "tiapp-remove-module ti.webdialog && tiapp-add-module ti.webdialog ios 1.1.0 && tiapp-add-module ti.webdialog android 1.1.0",
+		"postuninstall": "tiapp-remove-module ti.webdialog",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": {
+		"name": "Brenton House",
+		"email": "brenton.house@gmail.com",
+		"url": "https://brenton.house"
+	},
+	"maintainers": [
+		{
+			"name": "Brenton House",
+			"email": "brenton.house@gmail.com",
+			"url": "https://brenton.house"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "github:brentonhouse/titanium-webdialog"
+	},
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/brentonhouse/titanium-webdialog/issues"
+	},
+	"homepage": "https://github.com/brentonhouse/titanium-webdialog#readme",
+	"keywords": [
+		"titanium",
+		"mobile",
+		"alloy",
+		"turbo",
+		"axway",
+		"appcelerator",
+		"ios",
+		"android",
+		"iphone",
+		"ipad",
+		"webdialog",
+		"safari",
+		"brentonhouse"
+	],
+	"titanium": {
+		"type": "native-module",
+		"platform": [
+			"ios",
+			"android"
+		],
+		"native": [
+			{
+				"name": "ti.webdialog",
+				"platform": "ios",
+				"version": "1.1.0"
+			},
+			{
+				"name": "ti.webdialog",
+				"platform": "android",
+				"version": "1.1.0"
+			}
+		]
+	},
+	"dependencies": {
+		"@titanium/tiapp-xml": "^0.4.2"
+	}
+}
