@@ -5,21 +5,21 @@
 
 > Native modules that allows you to use native SFSafariViewController (iOS) and Chrome Pages (Android) with Axway Titanium native mobile apps..
 
-- [📝 Description](#-description)
-- [🚀 Getting Started](#-getting-started)
-	- [Install `@titanium/webdialog` in root of project](#install-titaniumwebdialog-in-root-of-project)
-- [✨Features](#features)
-- [API's](#apis)
-	- [Top-Level](#top-level)
-		- [Methods](#methods)
-		- [Properties](#properties)
-		- [Events](#events)
-	- [`AuthenticationSession` (iOS only)](#authenticationsession-ios-only)
-		- [Methods](#methods-1)
-		- [Events](#events-1)
-- [📚Learn More](#learn-more)
-- [📣 Feedback](#-feedback)
-- [©️ Legal](#️-legal)
+* [📝 Description](#-description)
+* [🚀 Getting Started](#-getting-started)
+	* [Install `@titanium/webdialog` in root of project](#install-titaniumwebdialog-in-root-of-project)
+* [✨Features](#features)
+* [API's](#apis)
+	* [Top-Level](#top-level)
+		* [Methods](#methods)
+		* [Properties](#properties)
+		* [Events](#events)
+	* [`AuthenticationSession` (iOS only)](#authenticationsession-ios-only)
+		* [Methods](#methods-1)
+		* [Events](#events-1)
+* [📚Learn More](#learn-more)
+* [📣 Feedback](#-feedback)
+* [©️ Legal](#️-legal)
 
 
 ## 📝 Description
@@ -43,6 +43,10 @@ npm install @titanium/webdialog
 ## API's
 
 ### Top-Level
+
+```javascript
+const webdialog = require('@titanium/webdialog');
+```
 
 #### Methods
 
