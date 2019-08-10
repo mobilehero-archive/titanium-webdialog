@@ -5,14 +5,14 @@
 version: 1.1.0
 apiversion: 2
 architectures: armv7 arm64 i386 x86_64
-description: titanium-web-dialog
+description: titanium-webdialog
 author: Hans Knoechel
 license: Apache 2.0
 copyright: Copyright (c) 2017-present by Axway Appcelerator
 
 # these should not be edited
-name: titanium-web-dialog
-moduleid: @titanium/webdialog
+name: titanium-webdialog
+moduleid: titanium-webdialog
 guid: 1f19cce1-0ad7-4e25-ab3b-0666f54a0a49
 platform: iphone
 minsdk: 7.0.0
