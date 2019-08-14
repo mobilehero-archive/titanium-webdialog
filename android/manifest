@@ -1,8 +1,0 @@
-#
-# this is your module manifest and used by Titanium
-# during compilation, packaging, distribution, etc.
-#
-description: titanium-web-dialog
-author: Prashant Saini
-license: Apache 2.0
-copyright: Copyright (c) 2017 by Axway Appcelerator & Prashant Saini

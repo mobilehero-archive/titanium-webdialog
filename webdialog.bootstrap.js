@@ -1,0 +1,1 @@
+global.binding.register('titanium-webdialog', require('ti.webdialog'));
