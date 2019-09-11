@@ -1,2 +1,2 @@
 
-module.exports = require('titanium_webdialog');
+module.exports = require('ti.webdialog');
