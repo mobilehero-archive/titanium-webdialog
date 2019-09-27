@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/webdialog",
-	"version": "1.0.12",
+	"version": "1.0.13",
 	"description": "Native modules that allows you to use native SFSafariViewController (iOS) and Chrome Pages (Android) with Axway Titanium native mobile apps.",
 	"main": "index.js",
 	"scripts": {
