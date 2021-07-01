@@ -8,7 +8,7 @@
 		"postinstall": "npx @titanium/tiapp-xml install",
 		"postuninstall": "npx @titanium/tiapp-xml uninstall",
 		"test": "npm install --ignore-scripts && npm run list",
-		"prepublishOnly": "git pull && bump retire",
+		"prepublishOnly2": "git pull && bump retire",
 		"postpublish": "npm deprecate ${npm_package_name}@${npm_package_version} \"Product retired.  No longer maintained.\""
 	},
 	"author": "Axway",
