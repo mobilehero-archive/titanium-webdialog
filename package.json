@@ -1,15 +1,16 @@
 {
 	"name": "@titanium/webdialog",
-	"version": "2.1.4",
-	"description": "Native modules that allows you to use native SFSafariViewController (iOS) and Chrome Pages (Android) with Axway Titanium native mobile apps.",
+	"version": "2.1.6",
+	"description": "Axway Amplify modules  to use native SFSafariViewController (iOS) and Chrome Pages (Android) with Appcelerator Titanium apps",
 	"main": "index.js",
+	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"scripts": {
 		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
 		"postinstall": "npx @titanium/tiapp-xml install",
 		"postuninstall": "npx @titanium/tiapp-xml uninstall",
 		"test": "npm install --ignore-scripts && npm run list",
-		"prepublishOnly2": "git pull && bump retire",
-		"postpublish": "npm deprecate ${npm_package_name}@${npm_package_version} \"Product retired.  No longer maintained.\""
+		"prepublishOnly": "git pull && bump insane",
+		"postpublish2": "npm deprecate ${npm_package_name}@${npm_package_version} \"Product retired.  No longer maintained.\""
 	},
 	"author": "Axway",
 	"maintainers": [
@@ -27,7 +28,6 @@
 	"bugs": {
 		"url": "https://github.com/brentonhouse/titanium-webdialog/issues"
 	},
-	"homepage": "https://github.com/brentonhouse/titanium-webdialog#readme",
 	"keywords": [
 		"titanium",
 		"mobile",
@@ -42,6 +42,16 @@
 		"webdialog",
 		"safari",
 		"titanium-native-module",
+		"sdk",
+		"plugin",
+		"amplify",
+		"api-builder",
+		"appcelerator-titanium",
+		"titanium-sdk",
+		"titanium-mobile",
+		"titanium-module",
+		"axway-sdk",
+		"axway-amplify",
 		"brenton-house"
 	],
 	"titanium": {
