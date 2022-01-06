@@ -1,16 +1,18 @@
 {
 	"name": "@titanium/webdialog",
-	"version": "2.1.6",
-	"description": "Axway Amplify modules  to use native SFSafariViewController (iOS) and Chrome Pages (Android) with Appcelerator Titanium apps",
+	"version": "2.1.7",
+	"description": "⭐  Axway Amplify module to use native SFSafariViewController (iOS) and Chrome Pages (Android) with Appcelerator Titanium SDK",
 	"main": "index.js",
 	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"scripts": {
-		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
 		"postinstall": "npx @titanium/tiapp-xml install",
 		"postuninstall": "npx @titanium/tiapp-xml uninstall",
-		"test": "npm install --ignore-scripts && npm run list",
-		"prepublishOnly": "git pull && bump insane",
-		"postpublish2": "npm deprecate ${npm_package_name}@${npm_package_version} \"Product retired.  No longer maintained.\""
+		"lint": "eslint . --fix",
+		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+		"prep": "npm install --ignore-scripts && npm run list",
+		"test": "npm run prep",
+		"prepublishOnly": "git pull && npm test && bump insane",
+		"prepublishOnly2": "git pull && npm test && npm audit fix && bump insane"
 	},
 	"author": "Axway",
 	"maintainers": [
@@ -86,5 +88,21 @@
 				"guid": "1f19cce1-0ad7-4e25-ab3b-0666f54a0a49"
 			}
 		}
+	},
+	"dependencies": {
+		"@geek/logger": "^1.0.17",
+		"@titanium/bluebird": "^3.7.8",
+		"@titanium/errors": "^1.0.5",
+		"@titanium/essentials": "^1.0.35",
+		"@titanium/events": "^1.0.18",
+		"@titanium/eventsource": "^1.0.3",
+		"@titanium/jwt": "^1.0.8",
+		"@titanium/module-copier": "^1.0.13",
+		"@titanium/please": "^1.0.16",
+		"@titanium/polyfill": "^1.0.15",
+		"@titanium/querystring": "^1.0.2",
+		"@titanium/tiapp-xml": "^1.0.11",
+		"@titanium/titanium": "^5.4.5",
+		"@titanium/turbo": "^2.2.22"
 	}
 }
